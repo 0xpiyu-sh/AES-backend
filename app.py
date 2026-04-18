@@ -82,7 +82,7 @@ def process_cipher():
     try:
         if mode == 'encrypt':
             result = encrypt_engine(text, password)
-        elif mode == 'decrypt':
+        elif mode == 'decrypt': 
             result = decrypt_engine(text, password)
         else:
             return jsonify({"error": "Invalid mode"}), 400
